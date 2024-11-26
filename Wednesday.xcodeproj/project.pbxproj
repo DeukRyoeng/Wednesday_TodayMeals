@@ -6,6 +6,20 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AF3F3BCE2CE506980039449C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3F3BC42CE506980039449C /* AppDelegate.swift */; };
+		AF3F3BCF2CE506980039449C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3F3BC82CE506980039449C /* SceneDelegate.swift */; };
+		AF3F3BD92CE506C60039449C /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = AF3F3BD82CE506C60039449C /* RxCocoa */; };
+		AF3F3BDC2CE507170039449C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = AF3F3BDB2CE507170039449C /* Alamofire */; };
+		AF3F3BDF2CE507290039449C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AF3F3BDE2CE507290039449C /* SnapKit */; };
+		AF3F3BE22CE507710039449C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AF3F3BE12CE507710039449C /* FirebaseAuth */; };
+		AF3F3BE42CE507710039449C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AF3F3BE32CE507710039449C /* FirebaseFirestore */; };
+		AF3F3BE62CE507710039449C /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = AF3F3BE52CE507710039449C /* FirebaseMessaging */; };
+		AF3F3BE92CE50A170039449C /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3F3BE82CE50A170039449C /* Endpoint.swift */; };
+		AF3F3BEB2CE50A6C0039449C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3F3BEA2CE50A6C0039449C /* NetworkManager.swift */; };
+		AF3F3BED2CE50D190039449C /* SchoolModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3F3BEC2CE50D190039449C /* SchoolModel.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		AF5907392CE4FC3100BA1C11 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF3F3BC42CE506980039449C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF3F3BC82CE506980039449C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AF3F3BE82CE50A170039449C /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		AF3F3BEA2CE50A6C0039449C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		AF3F3BEC2CE50D190039449C /* SchoolModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolModel.swift; sourceTree = "<group>"; };
 		AF5907222CE4FC3000BA1C11 /* Wednesday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wednesday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF5907382CE4FC3100BA1C11 /* WednesdayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WednesdayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF5907422CE4FC3100BA1C11 /* WednesdayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WednesdayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +84,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF3F3BE62CE507710039449C /* FirebaseMessaging in Frameworks */,
+				AF3F3BDF2CE507290039449C /* SnapKit in Frameworks */,
+				AF3F3BD92CE506C60039449C /* RxCocoa in Frameworks */,
+				AF3F3BDC2CE507170039449C /* Alamofire in Frameworks */,
+				AF3F3BE42CE507710039449C /* FirebaseFirestore in Frameworks */,
+				AF3F3BE22CE507710039449C /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,9 +110,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF3F3BE72CE509F20039449C /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				AF3F3BC42CE506980039449C /* AppDelegate.swift */,
+				AF3F3BC82CE506980039449C /* SceneDelegate.swift */,
+				AF3F3BE82CE50A170039449C /* Endpoint.swift */,
+				AF3F3BEA2CE50A6C0039449C /* NetworkManager.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		AF5907192CE4FC3000BA1C11 = {
 			isa = PBXGroup;
 			children = (
+				AF3F3BEC2CE50D190039449C /* SchoolModel.swift */,
+				AF3F3BE72CE509F20039449C /* Config */,
 				AF5907242CE4FC3000BA1C11 /* Wednesday */,
 				AF59073B2CE4FC3100BA1C11 /* WednesdayTests */,
 				AF5907452CE4FC3100BA1C11 /* WednesdayUITests */,
@@ -125,6 +163,12 @@
 			);
 			name = Wednesday;
 			packageProductDependencies = (
+				AF3F3BD82CE506C60039449C /* RxCocoa */,
+				AF3F3BDB2CE507170039449C /* Alamofire */,
+				AF3F3BDE2CE507290039449C /* SnapKit */,
+				AF3F3BE12CE507710039449C /* FirebaseAuth */,
+				AF3F3BE32CE507710039449C /* FirebaseFirestore */,
+				AF3F3BE52CE507710039449C /* FirebaseMessaging */,
 			);
 			productName = Wednesday;
 			productReference = AF5907222CE4FC3000BA1C11 /* Wednesday.app */;
@@ -208,6 +252,12 @@
 			);
 			mainGroup = AF5907192CE4FC3000BA1C11;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AF3F3BD72CE506C60039449C /* XCRemoteSwiftPackageReference "RxSwift" */,
+				AF3F3BDA2CE507170039449C /* XCRemoteSwiftPackageReference "Alamofire" */,
+				AF3F3BDD2CE507290039449C /* XCRemoteSwiftPackageReference "SnapKit" */,
+				AF3F3BE02CE507710039449C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = AF5907232CE4FC3000BA1C11 /* Products */;
 			projectDirPath = "";
@@ -249,6 +299,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF3F3BCE2CE506980039449C /* AppDelegate.swift in Sources */,
+				AF3F3BED2CE50D190039449C /* SchoolModel.swift in Sources */,
+				AF3F3BCF2CE506980039449C /* SceneDelegate.swift in Sources */,
+				AF3F3BEB2CE50A6C0039449C /* NetworkManager.swift in Sources */,
+				AF3F3BE92CE50A170039449C /* Endpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,6 +622,74 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AF3F3BD72CE506C60039449C /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.8.0;
+			};
+		};
+		AF3F3BDA2CE507170039449C /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.1;
+			};
+		};
+		AF3F3BDD2CE507290039449C /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		AF3F3BE02CE507710039449C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AF3F3BD82CE506C60039449C /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF3F3BD72CE506C60039449C /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		AF3F3BDB2CE507170039449C /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF3F3BDA2CE507170039449C /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		AF3F3BDE2CE507290039449C /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF3F3BDD2CE507290039449C /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		AF3F3BE12CE507710039449C /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF3F3BE02CE507710039449C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		AF3F3BE32CE507710039449C /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF3F3BE02CE507710039449C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		AF3F3BE52CE507710039449C /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF3F3BE02CE507710039449C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AF59071A2CE4FC3000BA1C11 /* Project object */;
 }
